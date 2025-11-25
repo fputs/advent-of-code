@@ -1,34 +1,25 @@
-# aoc
+# advent-of-code
 
-Advent Of Code solutions for 2015 using C99. Builds and runs on macOS, Linux, and OpenBSD.
+Advent Of Code solutions using a different language each year
 
-## Building
+2015: C99
 
-Be sure to clone the top project with its submodules:
+2016: Go
 
-    git clone --recurse-submodules https://git.burkey.co/eburk/aoc
+2017: TBD
 
-This project relies on several BSD extensions to the stdlib. OpenBSD and macOS users should be able to build the project out of the box. Linux users will need `libbsd` installed. The package is called `libbsd-dev` on Debian-based systems.
+2018: TBD
 
-Build the project using Cmake:
+2019: TBD
 
-    mkdir build
-    cd build
-    cmake ..
-    make
+2020: TBD
 
-The supplied `build.sh` script does the above for you.
+2021: TBD
 
-## Inputs
+2022: TBD
 
-Inputs can be generated from `get_input.sh`. You will need to get your session cookie from the Advent of Code website. The easiest way to do this is to inspect any input page in your browser.
+2023: TBD
 
-The script can then be run with `bash get_input.sh SESSIONCOOKIE`, with `SESSIONCOOKIE` replaced by your unique session cookie's hash.
+2024: Odin
 
-## Usage
-
-```bash
-./advent $DAY
-```
-
-For example, `./advent 1` will run Day 01
+2025: TBD
