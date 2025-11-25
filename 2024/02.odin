@@ -5,9 +5,10 @@ import "core:log"
 import "core:os"
 
 day02 :: proc() {
-	input, ok := os.read_entire_file("input/01")
-	if !ok {
-		log.fatal("Failed to read input")
+    input := slurp_lines("input/02")
+	defer delete(input)
+	
+	for line in input {
+	    
 	}
-	fmt.println("Solution for Day 02 is not implemented yet")
 }

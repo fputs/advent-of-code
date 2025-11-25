@@ -1,7 +1,7 @@
 package aoc
 
-import "core:math"
 import "core:fmt"
+import "core:math"
 import "core:sort"
 import "core:strconv"
 import "core:strings"
@@ -18,24 +18,25 @@ day01 :: proc() {
 		b, _ := strconv.parse_int(sp[1])
 		append(&left, a)
 		append(&right, b)
+		delete(sp)
 	}
 	sort.quick_sort(left[:])
 	sort.quick_sort(right[:])
-	
+
 	p1: int
-	for i in 0..<len(left) {
-	    p1 += math.abs(left[i] - right[i])
+	for i in 0 ..< len(left) {
+		p1 += math.abs(left[i] - right[i])
 	}
 	fmt.println(p1)
-	
+
 	count: map[int]int
 	for r in right {
-	    count[r] += 1
+		count[r] += 1
 	}
- 
+
 	p2: int
 	for l in left {
-	    p2 += l * count[l]
+		p2 += l * count[l]
 	}
 	fmt.println(p2)
 }
