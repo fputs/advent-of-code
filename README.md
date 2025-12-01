@@ -22,4 +22,4 @@ Advent Of Code solutions using a different language each year
 
 2024: Odin
 
-2025: TBD
+2025: Ruby
