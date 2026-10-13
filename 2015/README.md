@@ -6,7 +6,7 @@ Advent Of Code solutions for 2015 using C99. Builds and runs on macOS, Linux, an
 
 Be sure to clone the top project with its submodules:
 
-    git clone --recurse-submodules https://git.burkey.co/eburk/aoc
+    git clone --recurse-submodules https://github.com/fputs/advent-of-code
 
 This project relies on several BSD extensions to the stdlib. OpenBSD and macOS users should be able to build the project out of the box. Linux users will need `libbsd` installed. The package is called `libbsd-dev` on Debian-based systems.
 
