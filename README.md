@@ -1,6 +1,6 @@
 # advent-of-code
 
-Rust solutions for Advent of Code, 2015 through 2025.
+Rust solutions for Advent of Code
 
 ## Run
 
