@@ -34,18 +34,15 @@ The puzzle text is linked at the top of the file. Stubs compile and print
 
 ## Inputs
 
-`get_input.sh` downloads every day of one year. Copy the `session` cookie
-from your browser on adventofcode.com.
+`get_input.sh` downloads every day of every year from 2015 through 2025.
+Copy the `session` cookie from your browser on adventofcode.com.
 
 ```bash
-./get_input.sh 2015 SESSION_TOKEN
+./get_input.sh SESSION_TOKEN
 ```
-
-The year argument here is four digits, because that is what the site uses
-in its URL.
 
 ## Add a year
 
 Copy `src/y2025` to `src/y2026`, then register `mod y2026` and a `2026` arm
-in `src/main.rs`. Bump `MAX_YEAR` in that file, and the year list in
+in `src/main.rs`. Bump `MAX_YEAR` in that file, and the last year in
 `get_input.sh`.

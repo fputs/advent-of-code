@@ -13,6 +13,7 @@ mod y2022;
 mod y2023;
 mod y2024;
 mod y2025;
+mod utility;
 
 use std::env;
 use std::fs;
@@ -113,7 +114,7 @@ fn find_input(year: u16, day: u8) -> Result<PathBuf, String> {
         return Ok(from_manifest);
     }
     Err(format!(
-        "no input file for {year} day {day}\nlooked for {}\nfetch it with ./get_input.sh {year} SESSION_TOKEN",
+        "no input file for {year} day {day}\nlooked for {}\nfetch it with ./get_input.sh SESSION_TOKEN",
         relative.display()
     ))
 }
